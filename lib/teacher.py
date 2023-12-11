@@ -22,3 +22,7 @@ class Teacher(User):
     def teach(self):
         random_element = random.randint(0, len(self.knowledge) -1)
         return self.knowledge[random_element]
+    
+teacher1 = Teacher("Omala", "Andrew")
+
+print(f"{teacher1.first_name} {teacher1.last_name} will be teaching '{teacher1.teach()}' today")
